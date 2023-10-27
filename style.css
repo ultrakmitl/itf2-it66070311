@@ -82,11 +82,12 @@ p {
 #profile-link {
     color: black;
     font-size: 48px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #profile-link:hover {
     color: blue;
+    text-decoration: underline;
 }
 
 .gallery .image:nth-child(1) {
