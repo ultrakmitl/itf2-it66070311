@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+}
+
+main {
+    width: 1024px;
+    min-height: 100vh;
+    border: 2px black solid;
+    margin: 0px auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.parent {
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    background-image: url(https://www.dictionary.com/e/wp-content/uploads/2021/01/20210114_simp_800x800-150x150.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 9999px;
+}
+
+.child {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    background-color: red;
+    width: 75px;
+    height: 75px;
+    border-radius: 9999px;
+}
+
+#notification {
+    color: white;
+    font-weight: bold;
+    padding-top: 5%;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+.row {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    width: 900px;
+    height: 1000px;
+}
+
+.gallery .image {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+}
+
+#extend-col {
+    grid-column: span 2;
+    /*grid-row: span 2;*/
+    background-color: red;
+}
+
+#extend-row {
+    /*grid-column: span 2;*/
+    grid-row: span 2;
+    background-color: red;
+}
+
+#profile-link {
+    color: black;
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+#profile-link:hover {
+    color: blue;
+}
+
+.gallery .image:nth-child(1) {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwFgVqAnJvcD6kI9KoRT3x0AOsuhRzly4HJQ&usqp=CAU);
+}
+
+.gallery .image:nth-child(2) {
+    background-image: url(https://i1.sndcdn.com/artworks-Zmdc2sqCLhsMFOy7-OfFuCQ-t500x500.jpg);
+}
+
+.gallery .image:nth-child(3) {
+    background-image: url(https://i.redd.it/86z0jwtdrbs41.jpg);
+}
+
+.gallery .image:nth-child(4) {
+    background-image: url(https://nemthuanviet.com/wp-content/uploads/2023/08/simp-la-gi.jpg);
+}
+
+.gallery .image:nth-child(5) {
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3d63e50e-f92b-417d-b167-7d6f0c7c2aee/dg0fu9q-3b296539-0795-44a0-98a5-dcacbd388cf7.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNkNjNlNTBlLWY5MmItNDE3ZC1iMTY3LTdkNmYwYzdjMmFlZVwvZGcwZnU5cS0zYjI5NjUzOS0wNzk1LTQ0YTAtOThhNS1kY2FjYmQzODhjZjcucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.0jleki7SX965Jhm1IJmKpJhBudMvNujiN7YgPge9bWU);
+}
+
+.gallery .image:nth-child(6) {
+    background-image: url(https://www.the-sun.com/wp-content/uploads/sites/6/2021/07/NINTCHDBPICT000667573669.jpg?strip=all&w=771);
+}
+
+.gallery .image:nth-child(7) {
+    background-image: url(https://images.airdroid.com/2023/08/simp-meaning.jpg);
+}
+
+.gallery .image:nth-child(8) {
+    background-image: url(https://www.phoenixnext.com/pub/media/magefan_blog/simp_content_cover_3.jpg);
+}
+
+.gallery .image:nth-child(9) {
+    background-image: url(https://assets.popbuzz.com/2021/05/what-does-simp-mean-on-tiktok-1612367746-view-0.png);
+}
+
+.gallery .image:nth-child(10) {
+    background-image: url(https://boisehighlights.com/wp-content/uploads/2022/04/simp-pic.png);
+}
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script>
+        function setName() {
+            const nameField = document.getElementById("username");
+            const name = nameField.value;
+            const title = document.getElementById("profile-link");
+            title.innerText = name + " Profile";
+        }
+        
+        function setImage() {
+            const profileImage = document.getElementById("profileImage");
+            const profile = document.getElementById("imageURL")
+            profileImage.style.backgroundImage = "url(" + profile.value + ")";
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <div id="profileImage" class="parent">
+            <div class="child">
+                <div>
+                    <h1 id="notification">1</h1>
+                </div>
+            </div>
+        </div>
+        <a id="profile-link" href="https://google.com">SIMP Profile</a>
+        <div class="row">
+            <p>set profile name</p>
+            <input id="username" type="text" />
+            <button onclick="setName()">set</button>
+        </div>
+        <div class="row">
+            <p>set profile picture</p>
+            <input id="imageURL" type="text" />
+            <button onclick="setImage()">set</button>
+        </div>
+        <div class="gallery">
+            <div class="image"></div>
+            <div id="extend-col" class="image"></div>
+            <div class="image"></div>
+            <div id = "extend-row" class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+            <div class="image"></div>
+        </div>
+    </main>
+</body>
+</html>
